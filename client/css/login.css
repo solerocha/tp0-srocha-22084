@@ -1,0 +1,16 @@
+.main-login {
+    background: linear-gradient(to bottom, #8d2e2e, hsl(340, 6%, 10%));
+    color: white;
+}
+
+.bg {
+    background-image: url(/client/images/logo4.jpg);
+    background-position: center center;
+    background-color: black;
+    color: white;
+}
+
+.bg-form-2 {
+    color: white;
+    background-color:  hsl(340, 6%, 10%);
+}
