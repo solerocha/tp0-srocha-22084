@@ -1,3 +1,18 @@
+header nav .nav-logo {
+    width: 10%;
+    justify-content: left;
+}
+
+header nav .nav-menu-items {
+    width: 70%;
+    justify-content: center;
+}
+
+header nav .nav-search {    
+    width: 20%;
+    justify-content: center;
+}
+
 .main-login {
     background: linear-gradient(to bottom, #8d2e2e, hsl(340, 6%, 10%));
     color: white;

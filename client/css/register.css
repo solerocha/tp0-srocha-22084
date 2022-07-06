@@ -1,0 +1,81 @@
+header nav .nav-logo {
+    width: 10%;
+    justify-content: left;
+}
+
+header nav .nav-menu-items {
+    width: 60%;
+    justify-content: center;
+}
+
+header nav .nav-search {    
+    width: 20%;
+    justify-content: center;
+}
+
+header nav .nav-login {
+    width: 10%;
+    justify-content: center;
+}
+
+.main-reg {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+#form {
+    background: #fff;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255,255,255,0.8);
+    border-radius: 10px;
+}
+
+.form-main {
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+input {
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus {
+    outline: none;
+    color: rgba(94,91,93);
+}
+
+label {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+input:focus~label {
+    top:-14px;
+    font-size: 12px;
+    color: #2196f3;
+}

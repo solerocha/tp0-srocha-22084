@@ -13,7 +13,7 @@ a {
     text-decoration: none; /*No quiero ninguna etiqueta con ancla*/
 }
 
-/* Header */
+/* Header -------------------------------- */
 
 header {
     width: 100%;
@@ -31,13 +31,15 @@ header nav {
     padding: 0;
     margin: 0;
     width: 100%;
+    height: 100px;
 }
 
 header nav .nav-logo {
     border-radius: 5px;
     width: 10%;
     display: flex;
-    justify-content: center;
+    margin: 0;
+    justify-content: left;
     align-items: center;
     text-decoration: none;
     list-style: none;
@@ -143,49 +145,45 @@ nav .nav-register a {
 }
 
 /* Main ------------------ */
-
 .container-main {
     margin: 10px;
     display: grid;
     gap: 1.6em; /*Añade un espaciado entre los items*/
     grid-template-columns: repeat(5, 1fr); /* Creo 5 columnas*/
+    background-color: transparent;
 }
 
-.container-main > .header-main, .container-main > .container-main, .container-main >.sidebar-main, .container-main > .div-post-main {
-    background: grey;
+.container-main > .header-main, .container-main > .content-main, .container-main >.sidebar-main, .container-main > .div-post-main {
     padding: 20px;
     text-align: center;
 }
 
 .container-main > .header-main {
-    background-color: #306aa3;
     color: white;
     grid-column: 1/-1;
 }
 
 .container-main > .content-main {
+    color: #ffffff;
     grid-column: span 3; /*Me indica que abarca 3 columnas*/
     grid-row: span 4;
-    background-color: darkkhaki;
     padding: 5px;
 }
 
-.container-main > .article-main {
-    background: #808e9b;
+.container-main > .div-main {    
     padding: 20px;
     margin-top: 5px;
-    color: #4298bd
+    transition: all 0.5s ease;
 }
 
-.content-main .article-main h3,
-.content-main .article-main p {
-    padding: 10px;
+.content-main .div-main h3,
+.content-main .div-main img:hover {
+    padding: 10px;   
 }
 
 .container-main > .sidebar-main {
     grid-column: span 2;
-    grid-row: span 4;
-    background: #485460;
+    grid-row: span 4;    
     color: #ffffff;
     display: flex;
     flex-direction: row;
@@ -198,8 +196,7 @@ nav .nav-register a {
     width: 200px;
 }
 
-.container-main > .div-post-main {
-    background: #2d3436;
+.container-main > .div-post-main {    
     color: #ffffff;
     height: 200px;
     width: 200px;
@@ -222,7 +219,7 @@ img {
     margin-top: 5px;
 }
 
-.container-main>.div-post-main:hover {
+.container-main>.div-post-main:hover, .content-main>.div-main:hover {
     cursor: pointer;
     color: #000000;
     background: #ffffff;
@@ -261,34 +258,5 @@ img {
 
 .panda-footer div .comeback-top {
     color: white;
-}
-
-/* REVISAR ----------------------------------*/
-
-
-form .form-input-control{
-    display: block;
-    margin-top: 0em;
-    color: #fff;
-    background-color: var(--bs-dark);
-    border-color: var(--bs-gray);
-}
-
-.form-input {
-    display: block;
-    width: 100%;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 

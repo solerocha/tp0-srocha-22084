@@ -5,35 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Panda Store</title>
-    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">    
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="images/logo3.ico">
     <script src="https://kit.fontawesome.com/9712056dab.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header class="e-header">
+<body id="top">
+    <!-- Sección del Header-->
+    <header>
+        <!-- Imagen mediante etiquetas HTML -->
         <nav>
-            <!-- Imagen mediante etiquetas HTML -->
-            <div>
-                <a class="logo-nav" href="index.html">
-                    <img src="images/logo1.png" width="90" height="90" alt="Panda Store">
-                </a>
-            </div>
-            <div class="nav-menu-items">
-                <a href="games.html" class="nav-items">Juegos</a>
-                <a href="movies.html" class="nav-items">Peliculas</a>
-                <a href="series.html" class="nav-items">Series</a>
-                <a href="comics.html" class="nav-items">Comics</a>
-            </div>
-            <form class="nav-search">
-                <input type="search" class="form-control" placeholder="Search" aria-label="Search">
-            </form>
-            <div class="nav-log">
-                <button type="button" class="btn-login">Login</button>
-                <button type="button" class="btn-sigup">Sig-up</button>
-            </div>
+            <ul class="nav-logo">
+                <li><a href="index.html">
+                    <img src="images/logo1.png" width="100" height="100" alt="Panda Store">
+                </a></li>
+            </ul>
+            <ul class="nav-menu-items">
+                <li><a href="movies.html" title="Movies">Peliculas</a></li>
+                <li><a href="series.html" title="Series">Series</a></li>
+                <li><a href="comics.html" title="Comics">Comics</a></li>
+                <li><a href="games.html" title="Comics">Juegos</a></li>
+            </ul>
+            <ul class="nav-search">
+                <form>
+                    <input type="text" id="header-search" class="form-control" placeholder="Search" autocomplete="off"
+                        aria-label="Search">
+                </form>
+            </ul>
         </nav>
     </header>
 
@@ -42,7 +42,7 @@
             <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded"></div>
             <div class="col bg-form-2 p-5 rounded-end main-login">
                 <!-- Login -->
-                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+                <h1 class="fw-bold text-center py-5">Bienvenido</h1>
                 
                 <form action="#">
                     <div class="mb-4">
@@ -50,7 +50,7 @@
                         <input type="email" class="form-control" name="email">
                     </div>
                     <div class="mb-4">
-                        <label for="password" class="form-label">Password</label>
+                        <label for="password" class="form-label">Contraseña</label>
                         <input type="password" class="form-control" name="password">
                     </div>
                     <div class="mb-4 form-check">
@@ -62,8 +62,8 @@
                         <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
                     </div>
                     <div class="my-3  text-center">
-                        <span>No tienes cuenta?<a href="#"> Regístrate</a></span> <br>
-                        <span><a href="#">Recuperar password</a></span><br><br>
+                        <span>No tienes cuenta?<a href="register.html"> Regístrate</a></span> <br>
+                        <span><a href="#">Recuperar contraseña</a></span><br><br>
                         <span>O</span>
                     </div>
 
@@ -102,26 +102,29 @@
     </main>
 
     <footer class="panda-footer">
-        <div class="icons-social">
-            <a href="https://www.twitter.com" target="_blank">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
+        <div class="footer-1">
+            <div class="icons-social">
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="comeback-top">
+                <a href="#top">Volver arriba</a>
+            </div>
         </div>
-        <span class="btt-up btt-up-icon">Volver al principio</span>
-        <hr>
+        
         <div class="legal-end-footer">
             <span>Términos de servicio</span>
             <span>Política de privacidad</span>
             <span>Política de reembolso</span>
             <span>Seguridad</span>
         </div>
-        <hr>
         <div class="legal-end-footer">
             <span>Todos los derechos reservados | @2022, Inc.</span>
         </div>

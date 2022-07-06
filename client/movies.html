@@ -10,57 +10,94 @@
     <script src="https://kit.fontawesome.com/9712056dab.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="e-header">
-        <nav>
+        <!-- Sección del Header-->
+        <header>
             <!-- Imagen mediante etiquetas HTML -->
-            <div>
-                <a class="logo-nav" href="index.html">
-                    <img src="images/logo1.png" width="90" height="90" alt="Panda Store">
-                </a>
+            <nav>
+                <ul class="nav-logo">
+                    <li><a href="index.html">
+                        <img src="images/logo1.png" width="100" height="100" alt="Panda Store">
+                    </a></li>
+                </ul>
+                <ul class="nav-menu-items">
+                    <li><a href="movies.html" title="Movies">Peliculas</a></li>
+                    <li><a href="series.html" title="Series">Series</a></li>
+                    <li><a href="comics.html" title="Comics">Comics</a></li>
+                    <li><a href="games.html" title="Comics">Juegos</a></li>
+                </ul>
+                <ul class="nav-search">
+                    <form>
+                        <input type="text" id="header-search" class="form-control" placeholder="Search" autocomplete="off"
+                            aria-label="Search">
+                    </form>
+                </ul>
+                <ul class="nav-login">
+                    <li><a href="login.html" title="Iniciar Sesión">Iniciar Sesión</a></li>
+                </ul>
+                <ul class="nav-register">
+                    <li><a href="register.html" title="Registrarse">Registrarme</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- Sección del Main principal -->
+        <div class="container-main">
+            <header class="header-main">
+                <h1>Estrenos</h1>
+            </header>
+    
+            <main class="content-main">            
+                <div class="div-main">
+                    <h3>Titlulo 1</h3>
+                    <img src="" alt="Comic: Spiderman">
+                </div>            
+            </main>
+    
+            <div class="div-post-main">
+                <img src="" alt="Pelicula: Batman - 2022">
             </div>
-            <div class="nav-menu-items">
-                <a href="games.html" class="nav-items">Juegos</a>
-                <a href="movies.html" class="nav-items">Peliculas</a>
-                <a href="series.html" class="nav-items">Series</a>
-                <a href="comics.html" class="nav-items">Comics</a>
+            <div class="div-post-main">
+                <img src="" alt="Serie: Modern Family">
             </div>
-            <form class="nav-search">
-                <input type="text" id="header-search" class="form-control" placeholder="Search" autocomplete="off" aria-label="Search">
-            </form>
-            <div class="nav-log">
-                <button type="button" class="btn-login">Login</button>
-                <button type="button" class="btn-sigup">Sig-up</button>
+            <div class="div-post-main">
+                <img src="" alt="Pelicula: Minions">
             </div>
-        </nav>
-    </header>
-
-    <main></main>
-
-    <footer class="panda-footer">
-        <div class="icons-social">
-            <a href="https://www.twitter.com" target="_blank">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
+            <div class="div-post-main">
+                <img src="" alt="Comic: La Liga de la Justicia">
+            </div>
+            <div class="div-post-main">
+                <img src="" alt="Serie: Sillicon Valley">
+            </div>
         </div>
-        <span class="btt-up btt-up-icon">Volver al principio</span>
-        <hr>
-        <div class="legal-end-footer">
-            <span>Términos de servicio</span>
-            <span>Política de privacidad</span>
-            <span>Política de reembolso</span>
-            <span>Seguridad</span>
-        </div>
-        <hr>
-        <div class="legal-end-footer">
-            <span>Todos los derechos reservados | @2022, Inc.</span>
-        </div>
-    </footer>
+    
+        <footer class="panda-footer">
+            <div class="footer-1">
+                <div class="icons-social">
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="comeback-top">
+                    <a href="#top">Volver arriba</a>
+                </div>
+            </div>
+            
+            <div class="legal-end-footer">
+                <span>Términos de servicio</span>
+                <span>Política de privacidad</span>
+                <span>Política de reembolso</span>
+                <span>Seguridad</span>
+            </div>
+            <div class="legal-end-footer">
+                <span>Todos los derechos reservados | @2022, Inc.</span>
+            </div>
+        </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
