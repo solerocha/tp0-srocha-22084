@@ -1,0 +1,24 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: darkkhaki;
+    color: black;
+}
+
+header {
+    height: 200px;
+    color: aquamarine;
+}
+
+header nav {
+    background-color: blue;
+}
+
+header .nav-container .nav-login img {
+    height: 28px;
+    width: 28px;
+
+}

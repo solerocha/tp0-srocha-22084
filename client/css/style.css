@@ -1,150 +1,274 @@
-.e-header {
-    background-color: hsl(340, 6%, 10%);
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/client/images/fondo.png);
+}
+
+a {
+    text-decoration: none; /*No quiero ninguna etiqueta con ancla*/
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    background-color: #212529;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+header nav {
+    font-size:larger;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+header nav .nav-logo {
+    border-radius: 5px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
     color: white;
 }
 
-.logo-nav {
-    border-radius: 2px;
+header nav .nav-menu-items {
+    width: 200px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
 }
 
-.nav-menu-items {    
-    display: inline-block;
+header nav .nav-search {
+    width: 200px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    width: 15%;
 }
 
-.nav-items {
-    background-color: #024959;
+header nav .nav-login {
+    width: 200px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+header nav .nav-register {
+    width: 200px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.nav-logo li  a img {
+    display: flex;
+    object-fit: contain;
+}
+
+nav .nav-menu-items a {
+    margin-right: 20px;
     color: white;
     text-decoration: none;
     padding: 5px;
     border-radius: 5px;
+    transition: all 0.4s;
 }
 
-/*REVISAR*/
-input, #header-search {
-    display: block;
-    width: 100%;
-    height: 34px;
-    padding: 6px 12px;
+nav .nav-login a {
+    margin-right: 0;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.4s;
 }
 
-.panda-main {
+nav .nav-register a {
+    margin-right: 0;
+    background-color: rgb(74, 177, 172);
     color: white;
-    margin: 10;
-    padding: 0;
-    list-style: none;
-    padding-left: 0;
-    background-color: rgb(153, 162, 201);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.4s;
 }
+
+.nav-logo img:hover {
+    transform: scale(0.9)
+}
+
+.nav-login li a:hover {
+    transform: scale(1.2);
+    color: white;
+    background-color: black;
+}
+
+.nav-register li a:hover {
+    transform: scale(1.2);
+    color: white;
+    background-color: black;
+}
+
+.nav-menu-items li a:hover {
+    transform: scale(1.2);
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Main ------------------ */
+
+.container-main {
+    margin: 10px;
+    display: grid;
+    gap: 1.6em; /*Añade un espaciado entre los items*/
+    grid-template-columns: repeat(5, 1fr); /* Creo 5 columnas*/
+}
+
+.container-main > .header-main, .container-main > .container-main, .container-main >.sidebar-main, .container-main > .div-post-main {
+    background: grey;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-main > .header-main {
+    background-color: #306aa3;
+    color: white;
+    grid-column: 1/-1;
+}
+
+.container-main > .content-main {
+    grid-column: span 3; /*Me indica que abarca 3 columnas*/
+    grid-row: span 4;
+    background-color: darkkhaki;
+    padding: 5px;
+}
+
+.container-main > .article-main {
+    background: #808e9b;
+    padding: 20px;
+    margin-top: 5px;
+    color: #4298bd
+}
+
+.content-main .article-main h3,
+.content-main .article-main p {
+    padding: 10px;
+}
+
+.container-main > .sidebar-main {
+    grid-column: span 2;
+    grid-row: span 4;
+    background: #485460;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-main > .sidebar-main img {
+    height: 200px;
+    width: 200px;
+}
+
+.container-main > .div-post-main {
+    background: #2d3436;
+    color: #ffffff;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.container-main .sidebar-main iframe {
+    object-fit: contain;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.container-main>.div-post-main:hover {
+    cursor: pointer;
+    color: #000000;
+    background: #ffffff;
+}
+
+/* Footer ------------------ */
 .panda-footer {
     background-color: hsl(340, 6%, 10%);
     color: white;
     text-align: center;    
-    left: 0;
-    bottom: 0;
     width: 100%;
-    margin-bottom: 0;
-}
-
-.tray-item-inner {
-    display: inline-block; /*Pone mi barra de navegación en horizontal*/
-}
-
-.tray-item-inner #login {
-    align-items: center;
-}
-
-.main-nav__item a {
-    color: white;
-    padding: 5px;
-    border-radius: 2px;
-    text-decoration: none;
-}
-
-.exptK {
-    align-items: flex-start;
-}
-
-.exptK {
-    appearance: none;
-    background: none;
-    border-style: none;
-    display: flex;
-    -webkit-box-align: center;
-    justify-content: center;
-    color: rgb(204,204,204);
-    transition: color 0.3s ease-out 0s;
-}
-
-.nav-menu-items {
-    display: inline-block
-}
-
-.nav-items {
-    background-color: #024959;
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-.btn {
     display: inline-block;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    border-radius: 0.25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
 }
 
-.btn-login {
-    color: #f8f9fa;
-    border-color: #f8f9fa;
-    margin-right: 0.5rem!important;
+.panda-footer div {
+    margin-bottom: 15px;
+    margin-top: 2px;
 }
 
-.btn-sigup {
-    color: #000;
-    background-color: #ffc107;
-    border-color: #ffc107;
+.legal-end-footer span{
+    margin-right: 50px;
 }
 
-.nav-log {
-    text-align: right!important;
+.icons-social a{
+    margin-right: 20px;
 }
 
-.nav-search {
-    flex: 0 0 auto;
-    width: 100%;
-    margin-bottom: 1rem!important;
-
+.footer-1 {
+    display: grid;
+    gap: 1.6em; /*Añade un espaciado entre los items*/
+    grid-template-columns: repeat(2, 1fr); /* Creo 5 columnas*/
 }
 
-form {
+.panda-footer div .comeback-top {
+    color: white;
+}
+
+/* REVISAR ----------------------------------*/
+
+
+form .form-input-control{
     display: block;
     margin-top: 0em;
-}
-
-.form-input-control {
     color: #fff;
     background-color: var(--bs-dark);
     border-color: var(--bs-gray);
@@ -168,48 +292,3 @@ form {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-[type=search] {
-    outline-offset: 0;
-    -webkit-appearance: menulist-textfield;
-}
-
-button, input {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
-
-.main-iframe {
-    align-items: center;
-    flex-direction: column;
-    -webkit-box-align: center;
-}
-
-.legal-end-footer {
-    margin-right: 0px;
-    margin-bottom: 10px;
-    display: inline-block;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-}
-
-.icons-social {
-    /*background-color: #587491;*/
-    align-items: center;
-    -webkit-box-align: center;
-    display: inline-block;
-}
-
-.btt-up {
-	display:none;
-	padding:20px;
-	background:#024959;
-	font-size:20px;
-	color:#fff;
-	cursor:pointer;
-	position: fixed;
-	bottom:20px;
-	right:20px;
-}
