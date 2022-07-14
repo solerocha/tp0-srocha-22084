@@ -1,0 +1,89 @@
+.container-main {
+    text-align: center;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 20% 80%);
+    height: 100%;
+}
+
+.header-main {
+    background: rgb(92, 61, 61);
+    height: 90px;
+}
+
+.container-main > .header-main, .container-main > .content-main-profile {
+    padding: 20px;
+
+    text-align: center;
+    border-radius: 10px;
+}
+
+.container-main > .content-main-profile {
+    background:rgb(92, 61, 61);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.column-left {
+    width: 30%;
+    display: flex;
+    background: rgb(71, 33, 33);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 16px;
+    left: 5px;
+    top: 10px;
+}
+
+.rows-left {
+    height: 400px;
+    width: 180px;
+    left: 5px;
+    top: 10px;
+    justify-content: space-around;
+}
+
+.rows-left>.account-user {
+    height: 50px;
+}
+
+.menu-profile-nav {
+    height: 35px;
+    padding: 5px;
+    
+    font-size: 14px;
+}
+
+.column-right {
+    width: 70%;
+    background:rgb(92, 61, 61);
+    border-radius: 10px;
+    display: grid;
+    text-align: center;
+}
+
+.column-left>.col-user-menu>.rows-left>.menu-profile-nav, .column-right>.col-user-dash .dash-link{
+    text-decoration: none;
+    list-style: none;
+}
+
+.col-user-dash {
+    height: 400px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+
+.dash-link {
+    background: rgb(71, 33, 33);
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    
+}

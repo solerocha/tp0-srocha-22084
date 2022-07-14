@@ -1,62 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Cuenta | Panda Store</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="images/logo3.ico">    
+    <link rel="icon" href="images/logo3.ico">
     <script src="https://kit.fontawesome.com/9712056dab.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header class="e-header">
+    <!-- Sección del Header-->
+    <header>
         <nav>
-            <!-- Imagen mediante etiquetas HTML -->
-            <div>
-                <a class="logo-nav" href="index.html">
-                    <img src="images/logo6f.png" width="90" height="90" alt="Panda Store">
-                </a>
-            </div>
-            <div class="nav-menu-items">
-                <a href="games.html" class="nav-items">Juegos</a>
-                <a href="movies.html" class="nav-items">Peliculas</a>
-                <a href="series.html" class="nav-items">Series</a>
-                <a href="comics.html" class="nav-items">Comics</a>
-            </div>
-            <form class="nav-search">
-                <input type="text" id="header-search" class="form-control" placeholder="Search" autocomplete="off" aria-label="Search">
-            </form>
-            <div class="nav-log">
-                <button type="button" class="btn-login">Login</button>
-                <button type="button" class="btn-sigup">Sig-up</button>
-            </div>
+            <ul class="nav-logo">
+                <li><a href="index.html">
+                        <img src="images/panda2.png" width="100" height="100" alt="Panda Store">
+                    </a></li>
+            </ul>
+            <ul class="nav-menu-items">
+                <li><a href="movies.html" title="Movies">Peliculas</a></li>
+                <li><a href="series.html" title="Series">Series</a></li>
+                <li><a href="comics.html" title="Comics">Comics</a></li>
+                <li><a href="games.html" title="Juegos">Juegos</a></li>
+            </ul>
+            <ul class="nav-search">
+                <input type="search" id="header-search" class="form-control" placeholder="Search" autocomplete="off"
+                    aria-label="Search">
+            </ul>
+            <ul class="nav-login">
+                <li><a href="#" title="Cerrar Sesión">Cerrar Sesión</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main></main>
+    <div class="container-main">
+        <header class="header-main">
+            <h1>Mi cuenta</h1>
+        </header>
 
+        <main class="content-main-profile">
+
+            <div class="column-left">
+                <div class="col-user-menu">
+                    <div class="rows-left">
+                        <div class="account-user">
+                            <span class="image-profile"><img src="" alt=""></span>
+                            <span class="username-profile">Username</span>
+                        </div>
+                        <ul class="menu-profile-nav">
+                            <!-- li*4>a -->
+                            <li>Mis datos</a></li>
+                            <li><a href="">Mis favoritos</a></li>
+                            <li><a href="">Mis listas</a></li>
+                            <li><a href="">Configuración</a></li>
+                            <li><a href="">Salir</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column-right">
+                <div class="col-user-dash">
+                    <div class="dash-link">
+                        <li class="menu-item profile"><span>Terror</span></li>
+                    </div>
+                    <div class="dash-link">
+                        <li class="menu-item profile"><span>Comedia</span></li>
+                    </div>
+                    <div class="dash-link">
+                        <li class="menu-item profile"><span>Acción</span></li>
+                    </div>
+                    <div class="dash-link">
+                        <li class="menu-item profile"><span>Ciencia Ficción</span></li>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Sección del Footer-->
     <footer class="panda-footer">
-        <div class="icons-social">
-            <a href="https://www.twitter.com" target="_blank">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
+        <div class="footer-1">
+            <div class="icons-social">
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="comeback-top">
+                <a href="#top">Volver arriba</a>
+            </div>
         </div>
-        <span class="btt-up btt-up-icon">Volver al principio</span>
-        <hr>
+
         <div class="legal-end-footer">
             <span>Términos de servicio</span>
             <span>Política de privacidad</span>
             <span>Política de reembolso</span>
             <span>Seguridad</span>
         </div>
-        <hr>
         <div class="legal-end-footer">
             <span>Todos los derechos reservados | @2022, Inc.</span>
         </div>
@@ -64,4 +114,5 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

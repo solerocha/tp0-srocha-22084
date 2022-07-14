@@ -15,7 +15,6 @@ a {
 }
 
 /* Header -------------------------------- */
-
 header {
     width: 100%;
     background-color: #1C191A;
@@ -164,7 +163,7 @@ nav .nav-register a {
 .container-main > .content-main {
     color: #ffffff;
     grid-column: span 3; /*Me indica que abarca 3 columnas*/
-    grid-row: span 4;
+    grid-row: span 4; 
     padding: 5px;
 }
 
@@ -247,7 +246,7 @@ img {
 }
 
 /* Responsive */
-/*Dispositivos móviles*/
+/*Dispositivos móviles
 @media screen and (max-width: 640px){
     header>nav>ul{
         justify-content: space-around;
@@ -257,9 +256,9 @@ img {
     .panda-footer {
         justify-content: space-around;
     }
-}
+}*/
 
-/*Tablets*/
+/*Tablets
 @media screen and (min-width:640px) and (max-width: 1280px){
     header {
         justify-content: space-around;
@@ -268,9 +267,9 @@ img {
     .panda-footer {
         justify-content: space-around;
     }
-}
+}*/
 
-/*Desktop*/
+/*Desktop
 @media screen and (min-width: 1280px){
     
-}
+}*/
