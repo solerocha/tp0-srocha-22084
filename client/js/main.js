@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
 
 	$('.btt-up').click(function(){
 		$('body, html').animate({
@@ -14,4 +14,4 @@ $(document).ready(function(){
 		}
 	});
 
-});
+});*/
