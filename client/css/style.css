@@ -3,7 +3,8 @@
     padding: 0;
 }
 
-body {
+body {    
+    margin: 30px;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(/client/images/fondo.png);
@@ -17,7 +18,7 @@ a {
 
 header {
     width: 100%;
-    background-color: #212529;
+    background-color: #1C191A;
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -47,17 +48,16 @@ header nav .nav-logo {
 }
 
 header nav .nav-menu-items {
-    width: 200px;
     height: auto;
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
     width: 55%;
+    text-transform: uppercase;
 }
 
 header nav .nav-search {
-    width: 200px;
     height: auto;
     display: flex;
     list-style: none;
@@ -69,7 +69,6 @@ header nav .nav-search {
 }
 
 header nav .nav-login {
-    width: 200px;
     height: auto;
     display: flex;
     list-style: none;
@@ -79,7 +78,6 @@ header nav .nav-login {
 }
 
 header nav .nav-register {
-    width: 200px;
     height: auto;
     display: flex;
     list-style: none;
@@ -191,11 +189,6 @@ nav .nav-register a {
     justify-content: center;
 }
 
-.container-main > .sidebar-main img {
-    height: 200px;
-    width: 200px;
-}
-
 .container-main > .div-post-main {    
     color: #ffffff;
     height: 200px;
@@ -203,20 +196,13 @@ nav .nav-register a {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s ease;
-    
+    transition: all 0.5s ease;    
 }
 
 img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-}
-
-.container-main .sidebar-main iframe {
-    object-fit: contain;
-    width: 100%;
-    margin-top: 5px;
 }
 
 .container-main>.div-post-main:hover, .content-main>.div-main:hover {
@@ -253,10 +239,38 @@ img {
 .footer-1 {
     display: grid;
     gap: 1.6em; /*Añade un espaciado entre los items*/
-    grid-template-columns: repeat(2, 1fr); /* Creo 5 columnas*/
+    grid-template-columns: repeat(2, 1fr); /* Creo 2 columnas*/
 }
 
 .panda-footer div .comeback-top {
     color: white;
 }
 
+/* Responsive */
+/*Dispositivos móviles*/
+@media screen and (max-width: 640px){
+    header>nav>ul{
+        justify-content: space-around;
+        flex-flow: row;
+    }
+
+    .panda-footer {
+        justify-content: space-around;
+    }
+}
+
+/*Tablets*/
+@media screen and (min-width:640px) and (max-width: 1280px){
+    header {
+        justify-content: space-around;
+    }
+
+    .panda-footer {
+        justify-content: space-around;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 1280px){
+    
+}

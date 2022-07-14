@@ -8,7 +8,7 @@ header nav .nav-menu-items {
     justify-content: center;
 }
 
-header nav .nav-search {    
+header nav .nav-search {
     width: 20%;
     justify-content: center;
 }
@@ -33,7 +33,7 @@ h1 {
 #form {
     background: #fff;
     padding: 40px 0;
-    box-shadow: 0 0 6px 0 rgba(255,255,255,0.8);
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
 }
 
@@ -60,22 +60,100 @@ input {
 
 input:focus {
     outline: none;
-    color: rgba(94,91,93);
+    color: rgba(94, 91, 93);
 }
 
 label {
     color: var(--colorTextos);
     font-size: 16px;
     position: absolute;
-    bottom: 0;
+    /*bottom: 0;*/
     left: 5px;
     top: 10px;
     transition: 0.5s ease-in-out all;
     pointer-events: none;
 }
 
-input:focus~label {
-    top:-14px;
+input:focus~label,
+input:valid~label {
+    top: -14px;
     font-size: 12px;
     color: #2196f3;
 }
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%
+}
+
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #806AB3, #4568DC);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before {
+    width: 100%;
+}
+
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #B06AB3;
+    padding-top: 20px;
+}
+
+.btn-reg {
+    font-family: 'roboto';
+    background: #4568DC;
+    /*Fallback for old browsers*/
+    background: -webkit-linear-gradient(to right, #806AB3, #4568DC);
+    /*Chrome*/
+    background: linear-gradient(to right, #806AB3, #4568DC);
+    /*Edge, Chrome 26+, Opera 12+, Safari 7+*/
+    border: none;
+    border-radius: 5px;
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.4s;    
+    font-weight: bold;
+}
+
+.btn-reg:hover {
+    transform: scale(1.2);
+    font-size: 16px;
+}
+
+/*@media screen and (max-width:500px) {form {
+        width: 80%;
+    }}*/
+
+
+/*@media (max-width: 500px) {
+    form {
+        width: 80%;
+    }
+}*/
+
+/*@media (max-width: 700px) {
+    .container {
+        width: 600px;
+    }
+}*/
+
+/*@media (min-width: 1000px) {
+    .container {
+        width: 900px;
+    }
+}*/
